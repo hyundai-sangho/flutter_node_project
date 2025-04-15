@@ -1,6 +1,6 @@
-if (process.env.NODE_ENV !== 'production') {
-	require('dotenv').config({ path: './config/.env' }); // Ensure the path is correct
-}
+// if (process.env.NODE_ENV !== 'production') {
+// 	require('dotenv').config({ path: './config/.env' }); // Ensure the path is correct
+// }
 
 const express = require('express');
 const app = express();

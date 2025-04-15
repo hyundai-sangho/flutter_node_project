@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 7000;
 const noteRouter = require('./routes/Note'); // Ensure this path is correct
 
 const mongoose = require('mongoose');
-const mongoDbPath = process.env.MONGODB_URI;
+const mongoDbPath = process.env.MONGODBURI;
 const Note = require('./models/Note');
 const cors = require('cors');
 

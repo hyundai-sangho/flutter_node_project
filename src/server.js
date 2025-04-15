@@ -22,7 +22,7 @@ if (!mongoDbPath || !mongoDbPath.startsWith('mongodb+srv://')) {
 
 // Connect to MongoDB
 mongoose
-	.connect(mongoDbPath, { useNewUrlParser: true, useUnifiedTopology: true })
+	.connect(mongoDbPath)
 	.then(() => {
 		console.log('Successfully connected to MongoDB Atlas');
 

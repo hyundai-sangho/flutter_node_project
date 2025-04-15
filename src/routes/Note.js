@@ -7,6 +7,7 @@ const router = express.Router();
 router.get('/list', async (req, res) => {
 	try {
 		const notes = await Note.find().sort({ dateadded: -1 });
+		console.log('변경 적용 여부 테스트');
 		res.json(notes, '변경');
 	} catch (error) {
 		res.status(500).json({

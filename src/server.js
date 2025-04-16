@@ -34,7 +34,7 @@ mongoose
 		app.use('/notes', noteRouter);
 
 		app.get('/', (req, res) => {
-			const response = { message: 'API Works' };
+			const response = { statusCode: res.statusCode, message: 'API Works' };
 			res.json(response);
 		});
 	})

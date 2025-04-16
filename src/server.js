@@ -12,7 +12,7 @@ const mongoDbPath = process.env.MONGODBURI;
 const Note = require('./models/Note');
 const cors = require('cors');
 
-const whiteList = ['http://localhost:3000', 'http://127.0.0.1:3000', 'https://frontend-flutter.onrender.com', 'https://www.fchosangho.p-e.kr'];
+const whiteList = ['http://localhost:3000', 'http://127.0.0.1:3000', 'https://www.chosangho.p-e.kr'];
 app.use(cors({ origin: whiteList }));
 
 // Validate MongoDB URIs
